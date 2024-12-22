@@ -779,3 +779,9 @@ html {
 .group:hover .group-hover\:block{
   display: block;
 }
+
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+}
