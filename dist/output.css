@@ -630,6 +630,10 @@ html {
   top: 100%;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -768,5 +772,9 @@ html {
 @media (min-width: 768px){
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 }
