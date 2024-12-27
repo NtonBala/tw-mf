@@ -10,12 +10,20 @@
     <script>
       window.onload = () => {
         const mobileMenuIcon = document.getElementById("mobile-menu-button");
-
         mobileMenuIcon.addEventListener("click", () => {
           if (mobileMenuIcon.classList.contains("open")) {
             mobileMenuIcon.classList.remove("open");
           } else {
             mobileMenuIcon.classList.add("open");
+          }
+        });
+
+        const ticketsMenuItem = document.getElementById("tickets-menu-item");
+        ticketsMenuItem.addEventListener("click", () => {
+          if (ticketsMenuItem.classList.contains("open")) {
+            ticketsMenuItem.classList.remove("open");
+          } else {
+            ticketsMenuItem.classList.add("open");
           }
         });
       };
@@ -67,9 +75,22 @@
                 <span>Lineup</span>
               </div>
               <div
-                class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
+                id="tickets-menu-item"
+                class="group relative h-full cursor-pointer text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
               >
-                <span>Tickets</span>
+                <div class="p-4 text-center font-bold">Tickets</div>
+                <div class="hidden group-open:block">
+                  <div
+                    class="relative p-4 text-center text-pink-200 transition-colors ease-in-out hover:bg-white/5 hover:text-zinc-200"
+                  >
+                    <span>Single day ticket</span>
+                  </div>
+                  <div
+                    class="relative p-4 text-center text-pink-200 transition-colors ease-in-out hover:bg-white/5 hover:text-zinc-200"
+                  >
+                    <span>7 day ticket</span>
+                  </div>
+                </div>
               </div>
               <div
                 class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors hover:bg-white/10 hover:text-zinc-200"
