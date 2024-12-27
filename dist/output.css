@@ -622,12 +622,20 @@ html {
   position: sticky;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .right-0{
   right: 0px;
 }
 
 .top-0{
   top: 0px;
+}
+
+.top-\[62px\]{
+  top: 62px;
 }
 
 .top-full{
@@ -669,6 +677,10 @@ html {
 
 .w-8{
   width: 2rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-1{
@@ -841,6 +853,10 @@ html {
 
 .group.open .group-open\:opacity-0{
   opacity: 0;
+}
+
+.peer.open ~ .peer-open\:block{
+  display: block;
 }
 
 @media (min-width: 768px){
