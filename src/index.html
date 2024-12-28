@@ -40,6 +40,16 @@
         nextButton.addEventListener("click", () => {
           carousel.scrollLeft = carousel.scrollLeft + cardWidth;
         });
+
+        // * Handle light/dark mode toggle
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        darkModeToggle.addEventListener("click", () => {
+          if (document.body.classList.contains("dark")) {
+            document.body.classList.remove("dark");
+          } else {
+            document.body.classList.add("dark");
+          }
+        });
       };
     </script>
     <title>tw:mf</title>
@@ -47,6 +57,14 @@
   <body>
     <main class="bg-zinc-200 dark:bg-zinc-900">
       <header class="text-zinc-200">
+        <div
+          id="dark-mode-toggle"
+          class="width-12 fixed right-0 top-24 inline-block cursor-pointer rounded-l-lg bg-zinc-900 p-2 text-3xl text-zinc-200 dark:bg-zinc-200 dark:text-zinc-900"
+        >
+          <i class="fa-solid fa-sun dark:hidden"></i>
+          <i class="fa-solid fa-moon hidden dark:inline"></i>
+        </div>
+
         <nav
           class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500"
         >
