@@ -658,6 +658,10 @@ h6{
   position: sticky;
 }
 
+.-top-8{
+  top: -2rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -878,6 +882,10 @@ h6{
 
 .overflow-x-auto{
   overflow-x: auto;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .whitespace-nowrap{
