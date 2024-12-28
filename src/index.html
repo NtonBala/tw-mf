@@ -9,6 +9,7 @@
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
     <script>
       window.onload = () => {
+        // * Handle mobile menu button click
         const mobileMenuIcon = document.getElementById("mobile-menu-button");
         mobileMenuIcon.addEventListener("click", () => {
           if (mobileMenuIcon.classList.contains("open")) {
@@ -18,6 +19,7 @@
           }
         });
 
+        // * Handle mobile Tickets menu item click
         const ticketsMenuItem = document.getElementById("tickets-menu-item");
         ticketsMenuItem.addEventListener("click", () => {
           if (ticketsMenuItem.classList.contains("open")) {
@@ -27,6 +29,7 @@
           }
         });
 
+        // * Carousel left/right arrows functionality
         const previousButton = document.getElementById("previous");
         const nextButton = document.getElementById("next");
         const carousel = document.getElementById("carousel");
