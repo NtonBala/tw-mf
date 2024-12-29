@@ -832,6 +832,10 @@ h6{
   flex-grow: 1;
 }
 
+.caption-bottom{
+  caption-side: bottom;
+}
+
 .border-collapse{
   border-collapse: collapse;
 }
@@ -1194,6 +1198,10 @@ h6{
 
 .animation-delay-\[75ms\]{
   animation-delay: 75ms;
+}
+
+.caption-bottom{
+  caption-side: bottom;
 }
 
 .hover\:bg-sky-900:hover{
