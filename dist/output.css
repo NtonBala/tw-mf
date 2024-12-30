@@ -781,6 +781,11 @@ h6{
   display: none;
 }
 
+.size-4{
+  width: 1rem;
+  height: 1rem;
+}
+
 .h-1{
   height: 0.25rem;
 }
