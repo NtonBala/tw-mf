@@ -1427,6 +1427,13 @@ h6{
   display: block;
 }
 
+@media (max-width: 1048px){
+  .max-\[1048px\]\:mx-3{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:flex{
     display: flex;
