@@ -9,18 +9,20 @@
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
     <script>
       window.onload = () => {
-        // * Handle mobile menu button click
         const mobileMenuIcon = document.getElementById("mobile-menu-button");
+        const ticketsMenuItem = document.getElementById("tickets-menu-item");
+
+        // * Handle mobile menu button click
         mobileMenuIcon.addEventListener("click", () => {
           if (mobileMenuIcon.classList.contains("open")) {
             mobileMenuIcon.classList.remove("open");
+            ticketsMenuItem.classList.remove("open");
           } else {
             mobileMenuIcon.classList.add("open");
           }
         });
 
         // * Handle mobile Tickets menu item click
-        const ticketsMenuItem = document.getElementById("tickets-menu-item");
         ticketsMenuItem.addEventListener("click", () => {
           if (ticketsMenuItem.classList.contains("open")) {
             ticketsMenuItem.classList.remove("open");
