@@ -24,4 +24,4 @@ Project uses NPM as package manager. Install the dependencies and run `npm run t
 
 Project is deployed to Vercel: https://tw-mf-delta.vercel.app.
 
-Deployment is updated automatically by pushing to the `main` branch.
+Deployment is done automatically when pushing to the `main` branch.
